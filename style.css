@@ -335,3 +335,6 @@ details p {
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
 }
+
+.section > .container > .hero__actions { margin-top: 2rem; }
+.section:not(.section--tinted) .card { background: var(--sand); }
