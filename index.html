@@ -3,14 +3,161 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WebTest</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Ps. Nombre Apellido · Psicología Clínica</title>
+  <meta name="description" content="Atención psicológica presencial y online para adolescentes, adultos y parejas. Agenda tu primera sesión.">
+  <meta name="theme-color" content="#4f6f5a">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ps. Nombre Apellido · Psicología Clínica">
+  <meta property="og:description" content="Atención psicológica presencial y online. Agenda tu primera sesión.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-  <main class="card">
-    <img src="hola.svg" alt="Una carita sonriente" width="120" height="120">
-    <h1>¡Hola, mundo!</h1>
-    <p>Si estás viendo esto, la página funciona. 🎉</p>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="/">Ps. Nombre Apellido</a>
+      <nav class="nav" aria-label="Principal">
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#proceso">Cómo trabajo</a>
+        <a href="#preguntas">Preguntas</a>
+        <a class="btn btn--small" href="#contacto">Agendar hora</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero">
+      <div class="container hero__inner">
+        <div>
+          <p class="eyebrow">Psicología clínica · Presencial y online</p>
+          <h1>Un espacio seguro para hablar de lo que te importa</h1>
+          <p class="lead">Acompaño a adolescentes, adultos y parejas en procesos de ansiedad, depresión, duelo, estrés y dificultades en sus relaciones.</p>
+          <div class="hero__actions">
+            <a class="btn" href="#contacto">Agenda tu primera sesión</a>
+            <a class="btn btn--ghost" href="#servicios">Ver servicios</a>
+          </div>
+        </div>
+        <img class="hero__img" src="/img/retrato.svg" alt="Retrato de la psicóloga o psicólogo" width="420" height="420" fetchpriority="high">
+      </div>
+    </section>
+
+    <section id="sobre-mi" class="section">
+      <div class="container split">
+        <h2>Sobre mí</h2>
+        <div>
+          <p>Soy psicóloga/o clínica/o titulada/o de la Universidad Ejemplo, con más de X años de experiencia en atención individual y de pareja. Trabajo desde un enfoque cognitivo-conductual integrativo, adaptando cada proceso a la persona y a su momento.</p>
+          <p>Creo en una terapia cercana, sin juicios y basada en evidencia, donde puedas entenderte mejor y desarrollar herramientas concretas para tu día a día.</p>
+          <ul class="checks">
+            <li>Psicóloga/o clínica/o, Universidad Ejemplo</li>
+            <li>Magíster en Psicología Clínica</li>
+            <li>Registro profesional N° 00000</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicios" class="section section--tinted">
+      <div class="container">
+        <h2>Servicios</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Terapia individual</h3>
+            <p>Para adultos que atraviesan ansiedad, ánimo bajo, estrés laboral, duelos o momentos de cambio.</p>
+            <p class="card__meta">50 min · $00.000</p>
+          </article>
+          <article class="card">
+            <h3>Adolescentes</h3>
+            <p>Acompañamiento de 13 a 18 años, con espacios de orientación para madres, padres o cuidadores.</p>
+            <p class="card__meta">50 min · $00.000</p>
+          </article>
+          <article class="card">
+            <h3>Terapia de pareja</h3>
+            <p>Para mejorar la comunicación, resolver conflictos y reconstruir la confianza.</p>
+            <p class="card__meta">60 min · $00.000</p>
+          </article>
+          <article class="card">
+            <h3>Atención online</h3>
+            <p>Sesiones por videollamada, con la misma calidad y confidencialidad, desde donde estés.</p>
+            <p class="card__meta">50 min · $00.000</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="proceso" class="section">
+      <div class="container">
+        <h2>Cómo trabajo</h2>
+        <ol class="steps">
+          <li>
+            <h3>Primera sesión</h3>
+            <p>Conversamos sobre lo que te trae a consulta y vemos si este espacio es adecuado para ti.</p>
+          </li>
+          <li>
+            <h3>Plan de trabajo</h3>
+            <p>Definimos juntos objetivos claros y la frecuencia de las sesiones.</p>
+          </li>
+          <li>
+            <h3>Proceso</h3>
+            <p>Avanzamos a tu ritmo, revisando periódicamente cómo te sientes y qué ha cambiado.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="preguntas" class="section section--tinted">
+      <div class="container narrow">
+        <h2>Preguntas frecuentes</h2>
+        <details>
+          <summary>¿Cuánto dura un proceso terapéutico?</summary>
+          <p>Depende de cada persona y motivo de consulta. Algunos procesos duran unas pocas semanas y otros se extienden por varios meses. Lo evaluamos juntos.</p>
+        </details>
+        <details>
+          <summary>¿Emiten boleta para reembolso?</summary>
+          <p>Sí, se entrega boleta de honorarios que puedes presentar en tu isapre, fonasa o seguro complementario.</p>
+        </details>
+        <details>
+          <summary>¿Las sesiones online son igual de efectivas?</summary>
+          <p>Sí. La evidencia muestra resultados comparables a la terapia presencial para la mayoría de los motivos de consulta.</p>
+        </details>
+        <details>
+          <summary>¿Qué pasa si necesito cancelar una sesión?</summary>
+          <p>Puedes cancelar o reagendar con al menos 24 horas de anticipación sin costo.</p>
+        </details>
+      </div>
+    </section>
+
+    <section id="contacto" class="section">
+      <div class="container split">
+        <div>
+          <h2>Agenda tu hora</h2>
+          <p>Escríbeme y te respondo dentro de 24 horas hábiles para coordinar tu primera sesión.</p>
+          <div class="hero__actions">
+            <a class="btn" href="https://wa.me/56900000000" rel="noopener" target="_blank">Escribir por WhatsApp</a>
+            <a class="btn btn--ghost" href="mailto:contacto@tudominio.cl">Enviar un correo</a>
+          </div>
+        </div>
+        <dl class="info">
+          <dt>Dirección</dt>
+          <dd>Av. Ejemplo 1234, of. 56, Ciudad</dd>
+          <dt>Horario</dt>
+          <dd>Lunes a viernes, 9:00 a 20:00</dd>
+          <dt>Correo</dt>
+          <dd><a href="mailto:contacto@tudominio.cl">contacto@tudominio.cl</a></dd>
+        </dl>
+      </div>
+      <div class="container">
+        <p class="alert"><strong>¿Estás en una crisis?</strong> Esta consulta no atiende urgencias. Si tú o alguien cercano está en peligro, llama al número de emergencias de tu país o acude al servicio de urgencia más cercano.</p>
+      </div>
+    </section>
   </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Ps. Nombre Apellido · Psicología Clínica</p>
+    </div>
+  </footer>
 </body>
 </html>
